@@ -39,7 +39,7 @@ dentro del directorio: rmi_logging
 - Ejecuta el cliente en una o varias ventanas de consola:
     python cliente_juego.py
 
-- Una vez hayan logs dentro de "rmi_logging/logs_centralizados" se puede ejecutar el grafico : 
+- Una vez hayan logs dentro de "rmi_logging/logs_centralizados" se puede ejecutar el grafico :
     export VENTANA_TIEMPO=5
     python3 grafico.py
 
