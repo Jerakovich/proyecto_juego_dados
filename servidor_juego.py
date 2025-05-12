@@ -15,8 +15,7 @@ from utils.log_helper import registrar_log
 # Configuración del servidor
 load_dotenv()  # Cargar variables de entorno desde el archivo .env
 
-#HOST = '127.0.0.1'
-#PORT = 5000
+
 HOST = os.getenv("HOST")
 PORT = int(os.getenv("PORT"))
 # Configuración de logging
@@ -282,8 +281,10 @@ def iniciar_juego():
     juego_iniciado = True
     
     # Notificar a todos los jugadores que el juego ha comenzado
+
     mensaje = f"¡✅ El juego ha comenzado! Orden de turnos: {', '.join(orden_turnos)}\n"
     mensaje += f"Turno actual: {turno_actual}. Los jugadores de {turno_actual} deben escribir 'tirar' para lanzar el dado."
+    registrar_log("INFO", "1", "INICIO_JUEGO", turno_actual, "", "")
     
     for cliente in clientes:
         cliente.send(mensaje.encode())
