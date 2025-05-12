@@ -27,17 +27,17 @@ Clona el repositorio o descarga los archivos.
 # Ejecucion (procurar orden)
 
 - Ejecutar: 
-    javac *.java
+    javac *.java / javac (Get-ChildItem -Filter *.java).FullName
 
 - Ejecuta el rmi : 
 dentro del directorio: rmi_logging 
     java LogServer
 
 - Ejecuta el servidor:
-    python servidor.py
+    python servidor_juego.py
 
 - Ejecuta el cliente en una o varias ventanas de consola:
-    python cliente.py
+    python cliente_juego.py
 
 - Una vez hayan logs dentro de "rmi_logging/logs_centralizados" se puede ejecutar el grafico : 
     export VENTANA_TIEMPO=5
