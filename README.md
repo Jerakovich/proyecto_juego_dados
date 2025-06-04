@@ -30,7 +30,7 @@ Clona el repositorio o descarga los archivos.
     javac *.java / javac (Get-ChildItem -Filter *.java).FullName
 
 - Ejecuta el rmi : 
-dentro del directorio: rmi_logging 
+dentro del directorio rmi_logging:  
     java LogServer
 
 - Ejecuta el servidor:
